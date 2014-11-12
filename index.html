@@ -2,13 +2,98 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>СтройКлюч</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
+        <header class="header">
+            <div class="header-top">
+                <h1 class="main-logo">
+                    <a href="#">
+                        <img src="images/header/main_logo.png" alt="">
+                    </a>
+                </h1>
+
+                <div class="contact-box">
+                    <span class="tel">8(495) 778-04-99</span>
+                    <span class="text">Звоните, мы будет рады Вам помочь</span>
+                    <span class="wrap-btn-submit-green">
+                        <input type="button" value="Заказать звонок">
+                    </span>
+                </div><!--end CONTACT-BOX-->
+
+                <div class="text-box">
+                    <strong class="top-text">Ремонт квартир</strong>
+                    <span class="text"><span>под</span> и коттеджей в</span>
+                    <span class="text"><span>ключ</span> Москве и МО</span>
+                </div><!--end TEXT-BOX-->
+            </div><!--end HEADER-TOP-->
+
+            <div class="box-callback-header">
+                <div class="inner-box">
+                    <a class="link-download" href="#">скачать прайс</a>
+
+                    <img class="big-foto" src="images/header/interior.jpg" alt="">
+
+                    <div class="wrap-form-callback">
+                        <b>Оставьте заявку</b>
+                        <span>на <strong>бесплатную</strong> консультация</span>
+
+                        <form class="common-form" name="common-form" action="#" method="post">
+                            <input class="name" type="text" placeholder="Ваше имя">
+                            <input class="tel" type="text" placeholder="Ваш телефон">
+                            <textarea placeholder="Ваш вопрос"></textarea>
+
+                            <label class="wrap-btn-file">
+                                <input type="file">
+                                <img src="images/header/folder.png" alt="">
+                                Прикрепить<br> файл
+                            </label>
+
+                            <span class="wrap-btn-red">
+                                <input class="btn-submit-red" type="submit" value="Отправить">
+                            </span>
+                        </form>
+                    </div>
+                </div><!--end INNER-BOX-->
+            </div><!--end BOX-CALLBACK-HEADER-->
+
+            <div class="box-action">
+                <img class="img-girl" src="images/header/girl.png" alt="">
+                <div class="description-action">
+                    <span class="top-text">При заказе ремонта "под ключ" - подарок:</span>
+                    <strong class="important-text">Сертификат на мелкий ремонт на 10 лет</strong>
+                    <span>(по принципу "мастер на час")</span>
+
+                    <img class="img-tools" src="images/header/tools.png" alt="">
+                </div><!--end DESCRIPTION-ACTION-->
+            </div><!--end BOX-ACTION-->
+
+            <form class="form-repair" action="#" name="form-repair">
+                <input class="name" type="text" placeholder="Ваше имя">
+                <input class="tel" type="text" placeholder="Ваш телефон">
+
+                <span class="wrap-btn-submit-green">
+                    <input type="button" value="Заказать ремонт">
+                </span>
+            </form>
+        </header><!--end HEADER-->
+
+        <section class="statistics-company">
+            <img class="img-house" src="images/content/koteg.png" alt="">
+            <img class="img-lenta" src="images/content/lenta.png" alt="">
+
+            <ul class="list-block-statistics">
+                <li>более 10 лет опыта</li>
+                <li>1187 завершенных объектов</li>
+                <li>Гарантия работы до 5 лет</li>
+                <li>Бесплатный выезд инженера в день вызова</li>
+            </ul><!--end LIST-BLOCK-STATISTICS-->
+        </section><!--end STATISTICS-COMPANY-->
+
         <div class="content"></div>
         <div class="footer"></div>
     </div>

@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px 'Roboto Condensed', sans-serif; background:#fff; color:#333; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -15,7 +15,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#333; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -41,13 +41,256 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.header {}
+    .header-top {
+        position: relative;
+        z-index: 5;
+        min-height: 130px;
+        background: url("../images/header/bg_header.jpg") no-repeat;
+    }
+        .main-logo {
+            position: absolute;
+            width: 17.2%;
+            margin-left: 1.1%;
+            background: url("../images/header/bg_main_logo.png") no-repeat;
+            background-size: 100% 100%;
+        }
+            .main-logo img {
+                width: 93.2%;
+                max-width: 154px;
+                margin: 6.5% 3.4% 12.5%;
+            }
+        .contact-box {
+            float: right;
+            margin: 10px 1.2% 0 0;
+            line-height: 1.2;
+        }
+            .contact-box span {
+                display: block;
+            }
+                .contact-box .tel {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #333;
+                }
+                .contact-box .text {
+                    font-size: 14px;
+                    margin-bottom: 3px;
+                }
+                .wrap-btn-submit-green {
+                    padding: 5px;
+                    border: 1px solid #ccc;
 
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    border-radius: 2px;
+                }
+                    .wrap-btn-submit-green input {
+                        padding: 6px 5px;
+                        border: none;
+                        border-top: 1px solid #D8FB88;
+                        color: #525252;
+                        text-transform: uppercase;
+                        font-size: 23px;
+                        cursor: pointer;
+
+                        -webkit-box-shadow: inset -1px -1px 3px 0px rgba(0,0,0,0.4);
+                        -moz-box-shadow: inset -1px -1px 3px 0px rgba(0,0,0,0.4);
+                        box-shadow: inset -1px -1px 3px 0px rgba(0,0,0,0.4);
+
+                        background: #bbf730; /* Old browsers */
+                        background: -moz-linear-gradient(top, #bbf730 0%, #a0e500 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbf730), color-stop(100%,#a0e500)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top, #bbf730 0%,#a0e500 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top, #bbf730 0%,#a0e500 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top, #bbf730 0%,#a0e500 100%); /* IE10+ */
+                        background: linear-gradient(to bottom, #bbf730 0%,#a0e500 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbf730', endColorstr='#a0e500',GradientType=0 ); /* IE6-9 */
+                    }
+                    .wrap-btn-submit-green input:hover {
+                        background: #a0e500;
+                    }
+        .text-box {
+            margin-left: 17.2%;
+            padding-top: 13px;
+            text-align: center;
+            line-height: 1;
+        }
+            .text-box .text {
+                display: block;
+                font-size: 32px;
+                letter-spacing: 1px;
+                word-spacing: 4px;
+            }
+            .top-text {
+                text-transform: uppercase;
+                font-size: 36px;
+            }
+            .text-box > span span {
+                color: #ED0011;
+            }
+    .box-callback-header {
+        padding-bottom: 25px;
+        background: url("../images/header/red_bg.jpg") no-repeat;
+    }
+        .inner-box {
+            position: relative;
+            width: 95%;
+            max-width: 890px;
+            margin: 0 auto;
+        }
+            a.link-download {
+                position: relative;
+                float: right;
+                margin-top: 3px;
+                color: #fff;
+                font-size: 14px;
+            }
+                .link-download:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: -30px;
+                    top: -3px;
+                    width: 25px;
+                    height: 27px;
+                    background: url("../images/header/triagle_right_icon.png") no-repeat;
+                }
+                .big-foto {
+                    width: 100%;
+                    margin-top: 7px;
+                }
+            .wrap-form-callback {
+                position: absolute;
+                top: 18%;
+                right: 20px;
+                padding: 15px 20px 5px;
+                background: #EAEAEA;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+                .wrap-form-callback b,
+                .wrap-form-callback > span {
+                    display: block;
+                    line-height: 1;
+                }
+                .wrap-form-callback b {
+                    font-size: 25px;
+                    color: #EE0010;
+                    text-transform: uppercase;
+                    text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+                }
+                .wrap-form-callback > span {
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                }
+                    .wrap-form-callback > span strong {
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                .common-form {
+                    display: block;
+                }
+                    .common-form > input,
+                    .common-form textarea {
+                        display: block;
+                        width: 185px;
+                        margin-bottom: 13px;
+                        padding: 9px 0 9px 30px;
+                        border: none;
+                        font: 14px 'Roboto Condensed';
+                        background: #fff  no-repeat 10px 12px;
+
+                        -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+                        -moz-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+                        box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                    }
+                    .common-form textarea {
+                        height: 100px;
+                        background-image: url("../images/header/triagle_form_icon.png");
+                        resize: none;
+                    }
+                    .common-form .name {
+                        background-image: url("../images/header/enhabit_form_icon.png");
+                    }
+                    .common-form .tel {
+                        background-image: url("../images/header/tel_form_icon.png");
+                    }
+                    .wrap-btn-file {
+                        overflow: hidden;
+                        display: block;
+                        margin-bottom: 8px;
+                        color: #484747;
+                        font-size: 16px;
+                    }
+                        .wrap-btn-file input {
+                            display: none;
+                        }
+                        .wrap-btn-file img {
+                            float: left;
+                            margin: 0 10px 0 20px;
+                        }
+                    .wrap-btn-red {
+                        display: block;
+                        margin-bottom: 5px;
+
+                        -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+                        -moz-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+                        box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.75);
+
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                    }
+                        .wrap-btn-red input {
+                            width: 211px;
+                            margin: 3px;
+                            border: none;
+                            font-size: 26px;
+                            color: #fff;
+                            text-align: center;
+                            text-transform: uppercase;
+
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            border-radius: 4px;
+
+                            background: #fd3e4c; /* Old browsers */
+                            background: -moz-linear-gradient(top,  #fd3e4c 0%, #de0b1a 100%); /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fd3e4c), color-stop(100%,#de0b1a)); /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top,  #fd3e4c 0%,#de0b1a 100%); /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top,  #fd3e4c 0%,#de0b1a 100%); /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top,  #fd3e4c 0%,#de0b1a 100%); /* IE10+ */
+                            background: linear-gradient(to bottom,  #fd3e4c 0%,#de0b1a 100%); /* W3C */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd3e4c', endColorstr='#de0b1a',GradientType=0 ); /* IE6-9 */
+                        }
+                        .wrap-btn-red input:hover {
+                            background: #de0b1a;
+                        }
+    .box-action {
+        position: relative;
+        z-index: 5;
+        background: url("../images/header/wall_bg.jpg") no-repeat;
+    }
+        .img-girl {
+            margin: -370px 0 0 6%;
+        }
+        .description-action {
+            
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
