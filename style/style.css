@@ -208,6 +208,7 @@ a:hover                        { text-decoration:none; }
                     display: block;
                 }
                     .common-form > input,
+                    .consultation-form > input,
                     .common-form textarea {
                         display: block;
                         width: 185px;
@@ -358,7 +359,7 @@ a:hover                        { text-decoration:none; }
         .form-repair {
             float: left;
             width: 81.2%;
-            padding: 34px 0 25px;
+            padding: 31px 0 25px;
             background: url("../images/header/mramor.jpg") no-repeat;
             background-size: 100% 100%;
         }
@@ -446,6 +447,13 @@ a:hover                        { text-decoration:none; }
         background-size: 100% 100%;
         text-align: center;
     }
+        .our-offers:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 12px;
+            background: url("../images/content/border_bottom.jpg") repeat-x;
+        }
         .header-offers {
             padding: 4px 0 5px;
             font-size: 30px;
@@ -480,6 +488,240 @@ a:hover                        { text-decoration:none; }
                         font-size: 18px;
                         color: #323232;
                     }
+        .our-offers .wrap-btn-red {
+            margin-bottom: 15px;
+        }
+        .header-bg-white {
+            padding: 11px 0 12px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #323232;
+            background: #fff;
+        }
+            .header-bg-white span {
+                color: #e10b0b;
+            }
+        .wrap-form-consultation {
+            padding: 20px 0;
+        }
+            .tooltip-form {
+                display: inline-block;
+                background: url("../images/content/bg_tooltip.png") no-repeat;
+                width: 167px;
+                height: 186px;
+                padding: 0 35px 0 15px;
+                font-size: 22px;
+            }
+                .tooltip-form span {
+                    height: 186px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            .consultation-form {
+                display: inline-block;
+                width: 222px;
+                padding: 28px 18px 20px 23px;
+                background: url("../images/content/bg_form_fon.png") no-repeat;
+                background-size: 100% 100%;
+            }
+                .consultation-form .wrap-btn-submit-green {
+                    display: block;
+                    margin-top: 18px;
+                    background: #fff;
+                }
+                .consultation-form .wrap-btn-submit-green input {
+                    display: block;
+                    width: 100%;
+                }
+    .box-benefits {
+        padding-top: 35px;
+        background: url("../images/header/wall_bg.jpg") repeat-y;
+    }
+        .box-benefits:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 12px;
+            background: url("../images/content/border_bottom.jpg") repeat-x;
+        }
+        .header-benefits {
+            padding: 5px 0;
+            background: rgba(255, 255, 255, 0.8);
+            font: bold 36px 'Roboto', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .list-benefits {
+            margin-top: 40px;
+        }
+            .list-benefits li {
+                position: relative;
+                margin: 0 1% 38px;
+            }
+                .list-benefits li:before,
+                .list-benefits li:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 18px;
+                    top: -40px;
+                    height: 40px;
+                    background: url("../images/content/kanat.png") no-repeat;
+                }
+                .list-benefits li:before {
+                    left: 30px;
+                }
+                .list-benefits li:after {
+                    right: 30px;
+                }
+                .list-benefits li img {
+                    display: block;
+                }
+                .list-benefits header {
+                    padding: 5px 15px;
+                    font-size: 24px;
+                    color: #fff;
+                    background: #43B71F;
+                    text-transform: uppercase;
+                }
+                .list-benefits p {
+                    padding: 12px 16px 16px;
+                    background: #fff;
+                    font: 16px 'PT Sans', arial, sans-serif;
+                    line-height: 1.2;
+                }
+            .list-benefits .first {
+                z-index: 7;
+                max-width: 590px;
+                margin-left: 28.35%;
+            }
+                .list-benefits .first .description-benefits {
+                    width: 70.3%;
+                }
+                .list-benefits .first img {
+                    float: right;
+                    width: 29.7%;
+                }
+                    .list-benefits .first p {
+                        margin-right: 1%;
+                    }
+            .list-benefits .second {
+                float: right;
+                z-index: 6;
+                max-width: 675px;
+            }
+                .list-benefits .second:after {
+                    top: -260px;
+                    height: 260px;
+                }
+                .list-benefits .second .description-benefits {
+                    float: right;
+                    width: 69.3%;
+                }
+                .list-benefits .second img {
+                    float: left;
+                    width: 30.7%;
+                }
+                    .list-benefits .second p {
+                        margin-left: 1%;
+                        padding-bottom: 11px;
+                    }
+            .list-benefits .third {
+                float: right;
+                z-index: 5;
+                max-width: 655px;
+            }
+                .list-benefits .third .description-benefits {
+                    float: right;
+                    width: 67.9%;
+                }
+                .list-benefits .third img {
+                    float: right;
+                    width: 32.1%;
+                    max-height: 185px;
+                }
+                    .list-benefits .third p {
+                        margin-right: 1%;
+                        padding-right: 31px;
+                    }
+            .list-benefits .fourth {
+                overflow: visible;
+                z-index: 4;
+                max-width: 655px;
+            }
+                .list-benefits .fourth:before {
+                    display: none;
+                }
+                .list-benefits .woman-foto {
+                    display: block;
+                    position: relative;
+                }
+                    .list-benefits .woman-foto:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        max-width: 333px;
+                        width: 50.8%;
+                        height: 826px;
+                        margin-left: -1.5%;
+                        background: url("../images/content/woman.png") no-repeat bottom;
+                        background-size: 100%;
+                    }
+                .list-benefits .fourth > div {
+                    overflow: hidden;
+                }
+                .list-benefits .fourth .description-benefits {
+                    float: right;
+                    width: 69.7%;
+                }
+                .list-benefits .fourth img {
+                    float: right;
+                    width: 30.3%;
+                    max-height: 184px;
+                }
+                    .list-benefits .fourth p {
+                        margin-right: 1%;
+                    }
+            .list-benefits .fifth {
+                float: right;
+                z-index: 3;
+                max-width: 310px;
+            }
+                .list-benefits .fifth:before {
+                    top: -70px;
+                    height: 70px;
+                }
+                .list-benefits .fifth img {
+                    width: 100%;
+                }
+                    .list-benefits .fifth p {
+                        margin-top: 1.5%;
+                    }
+            .list-benefits .sixth {
+                max-width: 655px;
+                z-index: 2;
+            }
+                .list-benefits .sixth .description-benefits {
+                    float: right;
+                    width: 68.7%;
+                }
+                .list-benefits .sixth img {
+                    float: right;
+                    width: 31.3%;
+                    max-height: 185px;
+                }
+                    .list-benefits .sixth p {
+                        margin-right: 1%;
+                    }
+            .list-benefits li.clear,
+            .list-benefits li.clear {
+                margin: 0;
+            }
+                .list-benefits li.clear:before,
+                .list-benefits li.clear:after {
+                    display: none;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
