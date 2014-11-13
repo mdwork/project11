@@ -186,21 +186,26 @@ a:hover                        { text-decoration:none; }
                 border-radius: 10px;
             }
                 .wrap-form-callback b,
-                .wrap-form-callback > span {
+                .wrap-form-callback > span,
+                .wrap-form-works b,
+                .wrap-form-works > span {
                     display: block;
                     line-height: 1;
                 }
-                .wrap-form-callback b {
-                    font: 24px 'Roboto', sans-serif;
+                .wrap-form-callback b,
+                .wrap-form-works b{
+                    font: 500 24px 'Roboto', sans-serif;
                     color: #ee0010;
                     text-transform: uppercase;
                     text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
                 }
-                .wrap-form-callback > span {
+                .wrap-form-callback > span,
+                .wrap-form-works > span {
                     margin-bottom: 15px;
                     font-size: 18px;
                 }
-                    .wrap-form-callback > span strong {
+                    .wrap-form-callback > span strong,
+                    .wrap-form-works > span strong {
                         text-decoration: underline;
                         font-weight: 400;
                     }
@@ -210,6 +215,7 @@ a:hover                        { text-decoration:none; }
                     .common-form > input,
                     .consultation-form > input,
                     .work-form > input,
+                    .form-works > input,
                     .common-form textarea {
                         display: block;
                         width: 185px;
@@ -233,11 +239,13 @@ a:hover                        { text-decoration:none; }
                         resize: none;
                     }
                     .common-form .name,
-                    .work-form .name {
+                    .work-form .name,
+                    .form-works .name {
                         background-image: url("../images/header/enhabit_form_icon.png");
                     }
                     .common-form .tel,
-                    .work-form .tel {
+                    .work-form .tel,
+                    .form-works .tel {
                         background-image: url("../images/header/tel_form_icon.png");
                     }
                     .wrap-btn-file {
@@ -730,6 +738,7 @@ a:hover                        { text-decoration:none; }
     .box-work-plan {
         position: relative;
         padding-top: 15px;
+        margin-bottom: 10px;
         background: url("../images/content/bg_wall2.png") no-repeat;
         background-size: 100% 100%;
     }
@@ -836,6 +845,112 @@ a:hover                        { text-decoration:none; }
                         margin: 5px;
                         border-radius: 0;
                     }
+    .box-our-works {
+
+    }
+        .header-our-works {
+            padding: 40px 0;
+            color: #bf0311;
+            font: 500 36px 'Roboto', sans-serif;;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+            .header-our-works span {
+                display: inline-block;
+                padding: 15px 105px 5px;
+                background: url("../images/content/key.jpg") center left no-repeat;
+            }
+        .wrap-list-our-works {
+
+            text-align: center;
+            background: url("../images/content/bg_wall_works.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+            .list-our-works {
+                margin: 50px 0 40px;
+                display: inline-block;
+                max-width: 880px;
+                width: 95%;
+            }
+                .list-our-works li {
+                    float: left;
+                    width: 23.18%;
+                    max-width: 204px;
+                    margin: 0 0.9% 38px;
+                }
+                    .list-our-works li img {
+                        width: 100%;
+                    }
+
+    .box-form-works {
+        padding: 30px 0 60px;
+        text-align: center;
+        background: url("../images/content/bg_our_works.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+        .box-form-works header {
+            max-width: 500px;
+            margin: 0 auto 30px;
+            color: #f83947;
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .wrap-form-works {
+            display: inline-block;
+            padding: 15px 20px 20px;
+            background: #EAEAEA;
+
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+    .box-about-us {
+        position: relative;
+    }
+        .box-about-us header {
+            padding: 9px 0;
+            font-size: 36px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            background: url("../images/content/bg_header_about_us.jpg") repeat-x;
+        }
+        .description-company {
+            position: absolute;
+            max-width: 380px;
+            padding: 10px 10px 25px;
+            margin: 15px 0 0 3%;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+            .description-company span {
+                color: #ca0c19;
+            }
+                .description-company ul {
+                    margin-top: 25px;
+                }
+                    .description-company ul span {
+                        display: inline-block;
+                        width: 84px;
+                        text-align: right;
+                    }
+        .box-about-us img {
+            width: 100%;
+        }
+        .map-desktop {
+            display: block;
+        }
+        .map-mobile {
+            display: none;
+        }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
