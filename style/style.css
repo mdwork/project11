@@ -950,6 +950,25 @@ a:hover                        { text-decoration:none; }
         .map-mobile {
             display: none;
         }
+    .box-reviews {
+        background: url("../images/header/red_bg.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+        .header-reviews {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+        }
+            .content-review {
+                background: #fff;
+                border: 3px solid #B90808;
+            }
+            .content-review header {
+                font-size: 18px;
+                font-weight: 600;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
@@ -966,3 +985,31 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.footer {
+    background: url("../images/footer/bg_footer.jpg") no-repeat;
+}
+    .footer-logo {
+        position: absolute;
+        width: 17.2%;
+        background: rgba(255, 255, 255, 0.4);
+    }
+        .footer-logo img {
+            width: 93.2%;
+            max-width: 154px;
+            margin: 6.5% 3.4% 12.5%;
+        }
+    .copyright {
+        padding: 3px 0;
+        padding-right: 20px;
+        margin-left: 21.2%;
+        color: #fff;
+        text-align: right;
+        font: 13px 'PT Sans', arial, sans-serif;
+        background: url("../images/footer/line.jpg") repeat-x;
+    }
+        .contact-box .download {
+            display: block;
+            margin-bottom: 5px;
+            color: #e71806;
+            font: 15px 'Roboto', sans-serif;
+        }
