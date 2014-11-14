@@ -1244,6 +1244,13 @@ a:hover                        { text-decoration:none; }
     .header-offers {
         font-size: 26px;
     }
+    .box-work-plan:before {
+        display: none;
+    }
+    .description-company {
+        max-width: 310px;
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 650px) {
     .list-block-statistics li {
@@ -1251,6 +1258,9 @@ a:hover                        { text-decoration:none; }
     }
     .list-foto-repair span {
         font-size: 15px;
+    }
+    .list-work-plan span {
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -1289,6 +1299,19 @@ a:hover                        { text-decoration:none; }
     .header-benefits {
         font-size: 30px;
     }
+    .box-form-works header {
+        font-size: 28px;
+    }
+    .description-company {
+        position: relative;
+        max-width: none;
+    }
+    .map-desktop {
+        display: none;
+    }
+    .map-mobile {
+        display: block;
+    }
 }
 @media screen and (max-width: 550px) {
     .list-foto-repair li {
@@ -1308,6 +1331,19 @@ a:hover                        { text-decoration:none; }
         display: block;
         margin: 0 auto;
         width: 166px;
+    }
+    .list-work-plan li,
+    .list-work-plan li:first-child {
+        float: none;
+        display: inline-table;
+        width: 29%;
+        margin: 0 1% 15px;
+    }
+    .header-our-works {
+        font-size: 28px;
+    }
+    .header-our-works span {
+        padding: 20px 105px 10px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1335,6 +1371,21 @@ a:hover                        { text-decoration:none; }
     }
 
 }
+@media screen and (max-width: 492px) {
+    .tooltip-work:after {
+        display: none;
+    }
+    .tooltip-work {
+        display: block;
+        margin: 0 auto;
+    }
+    .work-form {
+        margin-top: 35px;
+    }
+    .list-work-plan {
+        margin-bottom: 15px;
+    }
+}
 @media screen and (max-width: 480px) {
     .list-benefits li img {
         display: none;
@@ -1342,6 +1393,9 @@ a:hover                        { text-decoration:none; }
     .list-benefits li .description-benefits {
         float: none !important;
         width: 100% !important;
+    }
+    .box-form-works header {
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 440px) {
@@ -1373,5 +1427,10 @@ a:hover                        { text-decoration:none; }
     }
     .list-block-statistics li span {
         font-size: 11px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .list-work-plan span {
+        font-size: 12px;
     }
 }
