@@ -654,7 +654,6 @@ a:hover                        { text-decoration:none; }
                 float: right;
                 z-index: 6;
                 max-width: 675px;
-                margin-left: 340px;
             }
                 .list-benefits .second:after {
                     top: -260px;
@@ -1095,6 +1094,11 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1040px) {
+    .wrap-repair .wrap-btn-submit-green input {
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 970px) {
     .description-action .top-text,
     .description-action .important-text {
@@ -1125,6 +1129,9 @@ a:hover                        { text-decoration:none; }
     .list-block-statistics li.third strong {
         font-size: 26px;
     }
+    .wrap-repair .wrap-btn-submit-green input {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 800px) {
     .header-top .top-text {
@@ -1145,6 +1152,72 @@ a:hover                        { text-decoration:none; }
     }
     .header-bg-white {
         font-size: 20px;
+    }
+    .wrap-repair:before,
+    .wrap-repair:after {
+        height: 103px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .list-benefits .woman-foto {
+        display: none;
+    }
+    .list-benefits li {
+        display: inline-block;
+        float: none !important;
+        max-width: 655px !important;
+    }
+    .list-benefits .first {
+        margin-left: 1%;
+    }
+    .list-benefits .fifth {
+        float: none;
+    }
+    .list-benefits .fifth .description-benefits {
+        float: right;
+        width: 65%;
+    }
+    .list-benefits .fifth img {
+        width: 35%;
+        float: left;
+    }
+    .list-benefits .sixth img {
+        float: left;
+    }
+    .list-benefits li p {
+        margin: 0 !important;
+    }
+    .bg-white {
+        overflow: hidden;
+        background: #fff;
+    }
+    .list-benefits .sixth {
+        z-index: 1;
+    }
+    .list-benefits .fourth {
+        z-index: 2;
+    }
+    .list-benefits .fourth:before {
+        display: block;
+    }
+    .list-benefits .fifth {
+        z-index: 3;
+    }
+    .list-benefits .second:after {
+        top: -130px;
+        height: 130px;
+    }
+    .list-benefits {
+        text-align: center;
+    }
+    .wrap-repair:before,
+    .wrap-repair:after {
+        display: none;
+    }
+    .form-repair {
+        float: none;
+        width: 100%;
+        max-height: none;
     }
 }
 @media screen and (max-width: 700px) {
@@ -1207,6 +1280,15 @@ a:hover                        { text-decoration:none; }
     .list-block-statistics li span {
         font-size: 12px;
     }
+    .list-benefits li p {
+        font-size: 14px;
+    }
+    .list-benefits header {
+        font-size: 20px;
+    }
+    .header-benefits {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 550px) {
     .list-foto-repair li {
@@ -1214,6 +1296,18 @@ a:hover                        { text-decoration:none; }
         float: none;
         width: 32%;
         margin: 0 0 20px 0.9%;
+    }
+    .form-repair {
+        text-align: center;
+    }
+    .form-repair > input {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .form-repair .wrap-btn-submit-green {
+        display: block;
+        margin: 0 auto;
+        width: 166px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1238,6 +1332,16 @@ a:hover                        { text-decoration:none; }
     }
     .list-block-statistics {
         display: block;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .list-benefits li img {
+        display: none;
+    }
+    .list-benefits li .description-benefits {
+        float: none !important;
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 440px) {
