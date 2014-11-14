@@ -1107,6 +1107,9 @@ a:hover                        { text-decoration:none; }
     .description-action .bottom-text {
         font-size: 14px;
     }
+    .list-benefits .second:before {
+        display: none;
+    }
 }
 @media screen and (max-width: 850px) {
     .img-girl {
@@ -1171,6 +1174,9 @@ a:hover                        { text-decoration:none; }
     }
     .list-benefits .first {
         margin-left: 1%;
+    }
+    .list-benefits .second:before {
+        display: block;
     }
     .list-benefits .fifth {
         float: none;
