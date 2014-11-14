@@ -1145,6 +1145,9 @@ a:hover                        { text-decoration:none; }
         padding: 2px 5px;
         font-size: 15px;
     }
+    .header-bg-white {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 700px) {
     .img-girl {
@@ -1167,10 +1170,16 @@ a:hover                        { text-decoration:none; }
     .list-block-statistics li.third strong {
         font-size: 22px;
     }
+    .header-offers {
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 650px) {
     .list-block-statistics li {
         height: 130px;
+    }
+    .list-foto-repair span {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -1199,6 +1208,14 @@ a:hover                        { text-decoration:none; }
     }
     .list-block-statistics li span {
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .list-foto-repair li {
+        display: inline-table;
+        float: none;
+        width: 32%;
+        margin: 0 0 20px 0.9%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1238,6 +1255,12 @@ a:hover                        { text-decoration:none; }
     }
     .description-action:after {
         display: none;
+    }
+    .header-bg-white {
+        font-size: 18px;
+    }
+    .header-offers {
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 440px) {
