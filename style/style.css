@@ -177,6 +177,7 @@ a:hover                        { text-decoration:none; }
                     margin-top: 7px;
                 }
             .wrap-form-callback {
+                position: relative;
                 display: inline-block;
                 padding: 15px 20px 5px;
                 background: #EAEAEA;
@@ -631,7 +632,7 @@ a:hover                        { text-decoration:none; }
             .list-benefits .first {
                 z-index: 7;
                 max-width: 590px;
-                margin-left: 28.35%;
+                margin-left: 290px;
             }
                 .list-benefits .first:before,
                 .list-benefits .first:after {
@@ -653,6 +654,7 @@ a:hover                        { text-decoration:none; }
                 float: right;
                 z-index: 6;
                 max-width: 675px;
+                margin-left: 340px;
             }
                 .list-benefits .second:after {
                     top: -260px;
@@ -1090,10 +1092,6 @@ a:hover                        { text-decoration:none; }
             color: #e71806;
             font: 15px 'Roboto', sans-serif;
         }
-
-.popup-form {
-    display: none;
-}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
