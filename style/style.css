@@ -145,6 +145,7 @@ a:hover                        { text-decoration:none; }
                 color: #ED0011;
             }
     .box-callback-header {
+        min-height: 515px;
         padding-bottom: 25px;
         background: url("../images/header/red_bg.jpg") no-repeat;
     }
@@ -315,6 +316,8 @@ a:hover                        { text-decoration:none; }
     }
         .img-girl {
             position: absolute;
+            bottom: 0;
+            z-index: 2;
             width: 50%;
             max-width: 412px;
             margin: -370px 0 0 6%;
@@ -326,6 +329,7 @@ a:hover                        { text-decoration:none; }
             margin-left: 413px;
             padding: 17px 0 20px;
             background: url("../images/header/fon_action.png") no-repeat;
+            background-size: 100%;
             text-align: center;
         }
             .description-action span {
@@ -1093,11 +1097,28 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 970px) {
+    .description-action .top-text,
+    .description-action .important-text {
+        font-size: 16px;
+    }
+    .description-action .bottom-text {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .img-girl {
+        width: 37%;
+    }
+    .description-action {
+        margin-left: 40%;
+    }
+}
 @media screen and (max-width: 800px) {
-    .top-text {
+    .header-top .top-text {
         font-size: 26px;
     }
-    .text-box .text {
+    .header-top .text-box .text {
         font-size: 22px;
     }
     .contact-box .tel {
@@ -1111,6 +1132,16 @@ a:hover                        { text-decoration:none; }
         font-size: 15px;
     }
 }
+@media screen and (max-width: 700px) {
+    .img-girl {
+        position: relative;
+        z-index: 1;
+        margin: 0 0 -6px 7%;
+    }
+    .description-action {
+        margin-left: 1%;
+    }
+}
 @media screen and (max-width: 600px) {
     .header-top {
         background-size: 100% 100%;
@@ -1120,8 +1151,44 @@ a:hover                        { text-decoration:none; }
         padding-top: 5px;
         margin: 0;
     }
-    .text-box {
+    .header-top .text-box {
         margin-left: 0;
         padding: 20px 0 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .inner-box {
+        text-align: center;
+    }
+    .wrap-link-download {
+        display: block;
+        padding-top: 5px;
+    }
+    a.link-download {
+        float: none;
+    }
+    .big-foto {
+        display: none;
+    }
+    .pos-form-callback {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .description-action {
+        background-size: 100% 100%;
+    }
+    .description-action .top-text,
+    .description-action .important-text {
+        font-size: 14px;
+    }
+    .description-action .bottom-text {
+        font-size: 12px;
+    }
+    .description-action:after {
+        display: none;
     }
 }
