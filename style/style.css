@@ -435,7 +435,6 @@ a:hover                        { text-decoration:none; }
             z-index: 10;
             display: inline-block;
             max-width: 793px;
-            width: 100%;
         }
             .list-block-statistics li {
                 display: inline-table;
@@ -1094,3 +1093,35 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    .top-text {
+        font-size: 26px;
+    }
+    .text-box .text {
+        font-size: 22px;
+    }
+    .contact-box .tel {
+        font-size: 20px;
+    }
+    .contact-box .text {
+        font-size: 10px;
+    }
+    .wrap-btn-submit-green input {
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-top {
+        background-size: 100% 100%;
+    }
+    .contact-box {
+        float: none;
+        padding-top: 5px;
+        margin: 0;
+    }
+    .text-box {
+        margin-left: 0;
+        padding: 20px 0 10px;
+    }
+}
