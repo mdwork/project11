@@ -878,7 +878,7 @@ a:hover                        { text-decoration:none; }
                         border-radius: 0;
                     }
     .box-our-works {
-
+        overflow: hidden;
     }
         .header-our-works {
             padding: 40px 0;
@@ -1134,10 +1134,12 @@ a:hover                        { text-decoration:none; }
     }
 }
 @media screen and (max-width: 800px) {
-    .header-top .top-text {
+    .header-top .top-text,
+    .footer .top-text {
         font-size: 26px;
     }
-    .header-top .text-box .text {
+    .header-top .text-box .text,
+    .footer .text-box .text {
         font-size: 22px;
     }
     .contact-box .tel {
@@ -1219,6 +1221,17 @@ a:hover                        { text-decoration:none; }
         width: 100%;
         max-height: none;
     }
+    .footer-logo {
+        position: relative;
+        float: left;
+        width: 91px;
+    }
+    .copyright {
+        margin-left: 0;
+    }
+    .text-box {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 700px) {
     .img-girl {
@@ -1272,7 +1285,8 @@ a:hover                        { text-decoration:none; }
         padding-top: 5px;
         margin: 0;
     }
-    .header-top .text-box {
+    .header-top .text-box,
+    .footer .text-box {
         margin-left: 0;
         padding: 20px 0 10px;
     }
