@@ -1113,6 +1113,20 @@ a:hover                        { text-decoration:none; }
     .description-action {
         margin-left: 40%;
     }
+    .list-block-statistics {
+        display: block;
+    }
+    .list-block-statistics li {
+        height: 157px;
+    }
+    .list-block-statistics li span {
+        font-size: 19px;
+    }
+    .list-block-statistics li.first span,
+    .list-block-statistics li.second strong,
+    .list-block-statistics li.third strong {
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 800px) {
     .header-top .top-text {
@@ -1141,6 +1155,23 @@ a:hover                        { text-decoration:none; }
     .description-action {
         margin-left: 1%;
     }
+    .list-block-statistics li {
+        height: 142px;
+        margin-left: 1.5%;
+    }
+    .list-block-statistics li span {
+        font-size: 16px;
+    }
+    .list-block-statistics li.first span,
+    .list-block-statistics li.second strong,
+    .list-block-statistics li.third strong {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .list-block-statistics li {
+        height: 130px;
+    }
 }
 @media screen and (max-width: 600px) {
     .header-top {
@@ -1154,6 +1185,20 @@ a:hover                        { text-decoration:none; }
     .header-top .text-box {
         margin-left: 0;
         padding: 20px 0 10px;
+    }
+    .list-block-statistics {
+        display: inline-block;
+    }
+    .list-block-statistics li {
+        height: 100px;
+    }
+    .list-block-statistics li.first span,
+    .list-block-statistics li.second strong,
+    .list-block-statistics li.third strong {
+        font-size: 14px;
+    }
+    .list-block-statistics li span {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1176,6 +1221,9 @@ a:hover                        { text-decoration:none; }
         right: auto;
         margin-top: 50px;
     }
+    .list-block-statistics {
+        display: block;
+    }
 }
 @media screen and (max-width: 440px) {
     .description-action {
@@ -1190,5 +1238,15 @@ a:hover                        { text-decoration:none; }
     }
     .description-action:after {
         display: none;
+    }
+}
+@media screen and (max-width: 440px) {
+    .list-block-statistics li.first span,
+    .list-block-statistics li.second strong,
+    .list-block-statistics li.third strong {
+        font-size: 13px;
+    }
+    .list-block-statistics li span {
+        font-size: 11px;
     }
 }
