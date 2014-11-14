@@ -41,7 +41,7 @@
 
                     <img class="big-foto" src="images/header/interior.jpg" alt="">
 
-                    <div class="wrap-form-callback">
+                    <div class="wrap-form-callback pos-form-callback">
                         <b>Оставьте заявку</b>
                         <span>на <strong>бесплатную</strong> консультация</span>
 
@@ -213,12 +213,14 @@
                 </li>
 
                 <li class="sixth">
-                    <img src="images/content/benefits6.jpg" class="" alt="">
-                    <div class="description-benefits">
-                        <header>Документы компании</header>
-                        <p>Все учредительные документы компании официально зарегистрированы в налоговой службе России.
-                            Генеральный директор компании назначен приказом и является официальным лицом, которое всегда
-                            находится на своем рабочем месте. В этом Вы можете убедиться, приехав в офис компании.</p>
+                    <div class="overflow">
+                        <img src="images/content/benefits6.jpg" class="" alt="">
+                        <div class="description-benefits">
+                            <header>Документы компании</header>
+                            <p>Все учредительные документы компании официально зарегистрированы в налоговой службе России.
+                                Генеральный директор компании назначен приказом и является официальным лицом, которое всегда
+                                находится на своем рабочем месте. В этом Вы можете убедиться, приехав в офис компании.</p>
+                        </div>
                     </div>
                 </li>
                 <li class="clear"></li>
@@ -267,7 +269,7 @@
                     <span>Заполните заявку на <strong>БЕСПЛАТНУЮ</strong> консультацию</span>
                 </span>
 
-                <form class="work-form" name="consultation-form" action="#" method="post">
+                <form class="work-form" name="consultation-work-form" action="#" method="post">
                     <input class="name" type="text" placeholder="Ваше имя">
                     <input class="tel" type="text" placeholder="Ваш телефон">
 
@@ -310,7 +312,7 @@
                 <b>Оставьте заявку</b>
                 <span>на <strong>бесплатную</strong> консультация</span>
 
-                <form class="form-works" name="common-form" action="#" method="post">
+                <form class="form-works" name="consultation-form-2" action="#" method="post">
                     <input class="name" type="text" placeholder="Ваше имя">
                     <input class="tel" type="text" placeholder="Ваш телефон">
 
@@ -461,6 +463,29 @@
             <div class="copyright">&#169; Все права сохранены</div>
         </footer><!--end HEADER-TOP-->
     </div>
+
+    <!--FORM-->
+    <div class="wrap-form-callback popup-form">
+        <b>Оставьте заявку</b>
+        <span>на <strong>бесплатную</strong> консультация</span>
+
+        <form class="common-form" name="common-form" action="#" method="post">
+            <input class="name" type="text" placeholder="Ваше имя">
+            <input class="tel" type="text" placeholder="Ваш телефон">
+            <textarea placeholder="Ваш вопрос"></textarea>
+
+            <label class="wrap-btn-file">
+                <input type="file">
+                <img src="images/header/folder.png" alt="">
+                Прикрепить<br> файл
+            </label>
+
+            <span class="wrap-btn-red">
+                <input class="btn-submit-red" type="submit" value="Отправить">
+            </span>
+        </form>
+    </div>
+    <!--end FORM-->
 
     <script src="js/jQuery 1.11.0.js"></script>
     <script src="js/mainJs.js"></script>

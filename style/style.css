@@ -98,6 +98,7 @@ a:hover                        { text-decoration:none; }
                     border-radius: 2px;
                 }
                     .wrap-btn-submit-green input {
+                        width: 100%;
                         padding: 6px 5px;
                         border: none;
                         border-top: 1px solid #D8FB88;
@@ -106,6 +107,7 @@ a:hover                        { text-decoration:none; }
                         font: bold 23px 'Roboto', sans-serif;
                         cursor: pointer;
                         letter-spacing: 1px;
+                        line-height: 27px;
 
                         -webkit-box-shadow: inset -1px -1px 3px 0px rgba(0,0,0,0.4);
                         -moz-box-shadow: inset -1px -1px 3px 0px rgba(0,0,0,0.4);
@@ -174,15 +176,18 @@ a:hover                        { text-decoration:none; }
                     margin-top: 7px;
                 }
             .wrap-form-callback {
-                position: absolute;
-                top: 18%;
-                right: 20px;
+                display: inline-block;
                 padding: 15px 20px 5px;
                 background: #EAEAEA;
 
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
                 border-radius: 10px;
+            }
+            .pos-form-callback {
+                position: absolute;
+                top: 18%;
+                right: 20px;
             }
                 .wrap-form-callback b,
                 .wrap-form-callback > span,
@@ -366,16 +371,25 @@ a:hover                        { text-decoration:none; }
             background-size: 100% 100%;
         }
         .wrap-repair:after {
+            position: relative;
+            left: -1px;
             float: right;
             background-image: url("../images/header/fon_over_mramor_right.jpg");
         }
         .form-repair {
             float: left;
             width: 81.2%;
-            padding: 31px 0 25px;
+            max-height: 52px;
+            padding: 32px 0 27px;
             background: url("../images/header/mramor.jpg") no-repeat;
             background-size: 100% 100%;
         }
+            .form-repair .name {
+                background-image: url("../images/content/icon_name_grey.png");
+            }
+            .form-repair .tel {
+                background-image: url("../images/content/icon_tel_grey.png");
+            }
             .form-repair .wrap-btn-submit-green {
                 width: 29%;
                 margin-left: 3.85%;
@@ -539,6 +553,12 @@ a:hover                        { text-decoration:none; }
                 background: url("../images/content/bg_form_fon.png") no-repeat;
                 background-size: 100% 100%;
             }
+                .consultation-form .name {
+                    background-image: url("../images/content/icon_name_green.png");
+                }
+                .consultation-form .tel {
+                    background-image: url("../images/content/icon_tel_green.png");
+                }
                 .consultation-form .wrap-btn-submit-green {
                     display: block;
                     margin-top: 18px;
@@ -579,8 +599,8 @@ a:hover                        { text-decoration:none; }
                     display: block;
                     position: absolute;
                     width: 18px;
-                    top: -40px;
-                    height: 40px;
+                    top: -70px;
+                    height: 70px;
                     background: url("../images/content/kanat.png") no-repeat;
                 }
                 .list-benefits li:before {
@@ -610,6 +630,11 @@ a:hover                        { text-decoration:none; }
                 max-width: 590px;
                 margin-left: 28.35%;
             }
+                .list-benefits .first:before,
+                .list-benefits .first:after {
+                    top: -40px;
+                    height: 40px;
+                }
                 .list-benefits .first .description-benefits {
                     width: 70.3%;
                 }
@@ -619,6 +644,7 @@ a:hover                        { text-decoration:none; }
                 }
                     .list-benefits .first p {
                         margin-right: 1%;
+                        padding-right: 26px;
                     }
             .list-benefits .second {
                 float: right;
@@ -657,7 +683,7 @@ a:hover                        { text-decoration:none; }
                 }
                     .list-benefits .third p {
                         margin-right: 1%;
-                        padding-right: 31px;
+                        padding-right: 37px;
                     }
             .list-benefits .fourth {
                 overflow: visible;
@@ -1061,6 +1087,10 @@ a:hover                        { text-decoration:none; }
             color: #e71806;
             font: 15px 'Roboto', sans-serif;
         }
+
+.popup-form {
+    display: none;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
