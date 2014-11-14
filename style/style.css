@@ -44,7 +44,6 @@ a:hover                        { text-decoration:none; }
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding-bottom: 100px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -300,6 +299,9 @@ a:hover                        { text-decoration:none; }
                         .wrap-btn-red input:hover {
                             background: #de0b1a;
                         }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
     .box-action {
         position: relative;
         z-index: 5;
@@ -375,7 +377,7 @@ a:hover                        { text-decoration:none; }
             background-size: 100% 100%;
         }
             .form-repair .wrap-btn-submit-green {
-                width: 27.7%;
+                width: 29%;
                 margin-left: 3.85%;
                 background: #fff;
 
@@ -951,37 +953,80 @@ a:hover                        { text-decoration:none; }
             display: none;
         }
     .box-reviews {
+        overflow: hidden;
+        padding-bottom: 20px;
         background: url("../images/header/red_bg.jpg") no-repeat;
         background-size: 100% 100%;
     }
         .header-reviews {
+            margin-bottom: 25px;
             color: #fff;
             text-transform: uppercase;
             text-align: center;
             font-size: 36px;
             font-weight: 600;
         }
-            .content-review {
-                background: #fff;
-                border: 3px solid #B90808;
-            }
-            .content-review header {
-                font-size: 18px;
-                font-weight: 600;
-            }
+            .list-reviews {}
+                .list-reviews li {
+                    position: relative;
+                    margin: 0 0 40px 3.9%;
+                    width: 92%;
+                    clear: both;
+                }
+                .list-reviews li:nth-child(2n + 1) {
+                    margin-right: 3.9%;
+                }
+                    .foto-user {
+                        display: block;
+                        position: absolute;
+                        top: -30px;
+                        right: 0;
+                        max-width: 166px;
+                        width: 17.6%;
+                    }
+                    .list-reviews li:nth-child(2n + 1) .foto-user {
+                        right: auto;
+                    }
+                    .content-review {
+                        overflow: hidden;
+                        float: left;
+                        max-width: 747px;
+                        width: 80%;
+                        padding: 13px 35px 13px 13px;
+                        background: #fff;
+                        border: 3px solid #B90808;
+                        text-align: right;
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------NAV------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        border-radius: 10px;
+                    }
+                    .list-reviews li:nth-child(2n + 1) .content-review {
+                        float: right;
+                        padding: 13px 13px 13px 35px;
+                        text-align: left;
+                    }
+                        .content-review .text {
+                            float: right;
+                            width: 72.2%;
+                            font: 13px 'PT Sans', arial, sans-serif;
+                        }
+                        .list-reviews li:nth-child(2n + 1) .text {
+                            float: left;
+                        }
+                            .content-review header {
+                                display: inline-block;
+                                max-width: 400px;
+                                width: 95%;
+                                margin-bottom: 5px;
+                                border-bottom: 1px solid #B90808;
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                        .content-review img {
+                            width: 27.8%;
+                            max-width: 201px;
+                        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -990,7 +1035,7 @@ a:hover                        { text-decoration:none; }
 }
     .footer-logo {
         position: absolute;
-        width: 17.2%;
+        width: 10.4%;
         background: rgba(255, 255, 255, 0.4);
     }
         .footer-logo img {
@@ -999,13 +1044,16 @@ a:hover                        { text-decoration:none; }
             margin: 6.5% 3.4% 12.5%;
         }
     .copyright {
+        position: relative;
+        top: 1px;
         padding: 3px 0;
         padding-right: 20px;
-        margin-left: 21.2%;
+        margin-left: 15%;
         color: #fff;
         text-align: right;
         font: 13px 'PT Sans', arial, sans-serif;
         background: url("../images/footer/line.jpg") repeat-x;
+        background-size: 100% 100%;
     }
         .contact-box .download {
             display: block;
@@ -1013,3 +1061,6 @@ a:hover                        { text-decoration:none; }
             color: #e71806;
             font: 15px 'Roboto', sans-serif;
         }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------RESPONSIVE-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
