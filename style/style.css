@@ -752,12 +752,12 @@ a:hover                        { text-decoration:none; }
                     width: 68.7%;
                 }
                 .list-benefits .sixth img {
-                    float: right;
+                    float: left;
                     width: 31.3%;
                     max-height: 185px;
                 }
                     .list-benefits .sixth p {
-                        margin-right: 1%;
+                        margin-left: 1%;
                     }
             .list-benefits li.clear,
             .list-benefits li.clear {
@@ -1146,14 +1146,14 @@ a:hover                        { text-decoration:none; }
         font-size: 22px;
     }
     .contact-box .tel {
-        font-size: 20px;
+        font-size: 24px;
     }
     .contact-box .text {
-        font-size: 10px;
+        font-size: 12px;
     }
     .wrap-btn-submit-green input {
         padding: 2px 5px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .header-bg-white {
         font-size: 20px;
@@ -1235,7 +1235,7 @@ a:hover                        { text-decoration:none; }
     .copyright {
         margin-left: 0;
     }
-    .text-box {
+    .footer .text-box {
         margin-left: 0;
     }
 }
@@ -1438,8 +1438,6 @@ a:hover                        { text-decoration:none; }
     .header-offers {
         font-size: 24px;
     }
-}
-@media screen and (max-width: 440px) {
     .list-block-statistics li.first span,
     .list-block-statistics li.second strong,
     .list-block-statistics li.third strong {
@@ -1448,9 +1446,16 @@ a:hover                        { text-decoration:none; }
     .list-block-statistics li span {
         font-size: 11px;
     }
-}
-@media screen and (max-width: 440px) {
     .list-work-plan span {
         font-size: 12px;
+    }
+    .wrap-btn-submit-green input {
+        font-size: 15px;
+    }
+    .contact-box .text {
+        font-size: 10px;
+    }
+    .contact-box .tel {
+        font-size: 20px;
     }
 }
