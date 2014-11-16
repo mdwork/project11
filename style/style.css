@@ -523,7 +523,7 @@ a:hover                        { text-decoration:none; }
                     .list-work-plan span {
                         font-size: 18px;
                         color: #fff;
-                        text-shadow: 0px 3px 3px rgba(22, 22, 22, 1);
+                        text-shadow: 0 3px 3px rgba(22, 22, 22, 1);
                     }
         .our-offers .wrap-btn-red {
             margin-bottom: 15px;
